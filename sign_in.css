@@ -1,0 +1,14 @@
+.form {
+    text-align: center;
+    color: white;
+    width: 400px !important;
+    padding: 75px;
+}   
+
+a {
+    color: white !important;
+}
+
+.links {
+    padding: 10px;
+}

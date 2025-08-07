@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<script type="text/javascript">
+	
+	function reciver(){
+		document.getElementById('hear').submit;
+		var all = document.getElementById('hear');
+		var message = all.elements[0].value+", Thanks for reaching us out!"+"\nCheck "+all.elements[2].value+"'s MailBox\nStay safe in "+all.elements[3].value+"\nLady Review will hear your issue soon!"
+		var pos1 = all.elements[2].value.indexOf("@");
+		var pos2 = all.elements[2].value.indexOf(".");
+		if (pos1<1 || pos2<pos1+2 || pos2+2>=all.elements[2].value.length) {	
+			alert("Don't worry "+all.elements[0].value+",\nWe wont spam your mailbox\nPlease trust us and provide your true Mail ID");
+		}else{
+			alert(message);
+		}
+	}
+
+
+
+</script>
+<head>
+	<meta charset="utf-8">
+	<!--link rel="stylesheet" href="default.css"-->
+<style type="text/css">
+	div.laap{
+		border-radius: 6px;
+		background-color: #EEE;
+		padding: 20px;
+		margin-top: 10%;
+		margin-left: 40%;
+		margin-right: 40%; 
+		box-shadow: 0px 0px 10000px 650px rgb(0,0,0)
+
+	}
+
+	body{
+		background-color: rgb(31, 122, 31);
+		font-color: black :important;
+	}
+	.text{
+		min-width: 98%;
+		border-radius: 6px;
+		border-color: transparent;
+		background-color: #EAEAEA;
+	}
+	.text:hover{
+		min-width: 98%;
+		border-radius: 6px;
+		border-color: transparent;
+		background-color: #FFF;
+	}
+	.issue{
+		height:100px;
+		min-width: 98%;
+		border-radius: 6px;
+		border-color: transparent;
+	}
+	.hoverme{
+		background-color: #000000;
+		color: white;
+		border-color: transparent;
+		border-radius: 5px;
+		padding: 12px 20px;
+		box-shadow: 0px 0px 35px -3px rgba(0,0,0,0.7);
+		min-width: 98%;
+}
+
+	.hoverme:hover{
+		transition-duration: 0.25s;
+		background-color: rgb(31, 130, 31);
+		color: white;
+		border-color: transparent;
+		border-radius: 5px;
+		padding: 12px 20px;
+		box-shadow: 0px 0px 15px 6px rgba(0,0,0,0.7);
+		min-width: 98%;
+
+	}
+</style>
+<link rel="stylesheet" href="default.css">
+
+
+</head>
+
+
+
+<body">
+    <div class="nav_bar">
+        <img src="assets/logo/thumbnail.png" alt="">
+        <a class="button" href="sign_in.html"><span>Sign In</span></a>
+        <a href="">Contact Us</a>
+        <a href="">About Us</a>
+        <a href="genre.html">Genre</a>
+        <a href="movies.html">Movies</a>
+        <a href="#">Home</a>
+      </div>
+	
+ <div class="laap" style="color: black">	
+  <form id="hear" action="queries.php" method="post">
+
+    <label >First Name</label><br>
+    <input class="text" name="fir" placeholder="Your first name.." ><br><br>
+
+    <label >Last Name</label><br>
+    <input class="text" name="las" placeholder="Your last name.." ><br><br>
+
+    <label >Email</label><br>
+    <input class="text" name="ema" placeholder="How can we reach you?...." ><br><br>
+
+    <label >Country</label><br>
+    <select name="con">
+      <option value="India">India</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+      <option value="UK">UK</option>
+      <option value="RUSSIA">RUSSIA</option>
+      <option value="GERMANY">GERMANY</option>
+      <option value="SPAIN">SPAIN</option>
+      <option value="MEXICO">MEXICO</option>
+      <option value="ALASKA">ALASKA</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label>Issue</label><br>
+    <textarea class="issue" name="iss" placeholder="Describe Your Issue.."></textarea><br><br>
+
+    <input class="hoverme" type="submit" value="Submit" onclick="reciver()">
+
+  </form>
+ 
+</div> 
+
+
+
+
+</body>
+
+
+</html>

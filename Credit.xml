@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="Credit.xsl"?> 
+<ContentEditors>
+<Developer>
+	<name>Sathwik Amburi</name>
+	<devid>RA1711003010271</devid>
+	<FilesDone>Welcome page , Signup , Sign in</FilesDone>
+</Developer>
+<Developer>
+	<name>Brishti Hazra</name>
+	<devid>RA1711003010171</devid>
+	<FilesDone>Movie , movies</FilesDone>
+</Developer>
+<Developer>
+	<name>Kotaru Kumar Venkat</name>
+	<devid>RA1711003010075</devid>
+	<FilesDone>Query , Genre</FilesDone>
+</Developer>
+</ContentEditors>

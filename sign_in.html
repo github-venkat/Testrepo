@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>  
+    function validateform(){  
+    var name=document.myform.name.value;  
+    var password=document.myform.password.value;  
+      
+    if (name==null || name==""){  
+      alert("Username can't be blank");  
+      return false;  
+    }else if(password.length<6){  
+      alert("Password must be at least 6 characters long.");  
+      return false;  
+      }  
+    }  
+    </script>  
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sign_in.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Movie Review Website</title>
+</head>
+<body>
+    <div class="nav_bar">
+        <img src="assets/logo/thumbnail.png" alt="">
+        <a class="button" href="#"><span>Sign In</span></a>
+        <a href="">Contact Us</a>
+        <a href="">About Us</a>
+        <a href="genre.html">Genre</a>
+        <a href="movies.html">Movies</a>
+        <a href="index.html">Home</a>
+      </div>
+      
+      <div class="container form"> 
+        <form class="form-signin" name = 'myform' onsubmit="return validateform()" method="post" action="login.php">
+            <img src="assets/logo/thumbnail.png" alt="">
+            <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+            <input id="Email" class="form-control" placeholder="Username" name ='name' autofocus>
+            <input type="password" id="Password" class="form-control" placeholder="Password" name ='password'>
+            <div class="checkbox mb-3">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+          <div class="links">
+            <a href="sign_up.html">Don't have an account? Sign Up here!</a>
+          </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

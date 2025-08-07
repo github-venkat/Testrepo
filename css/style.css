@@ -1,0 +1,32 @@
+.logo {
+    text-align: center;
+    }
+  
+    .search {
+      margin: auto;
+      width: 40%;
+      /* border: 3px solid white; */
+      padding: 10px;
+      text-align: center;
+     }
+     #search {
+       margin: 7px;
+      float: right;
+     }
+    .search_bar {
+      background-color: white;
+      border-radius: 25px;
+      margin: 20px;
+    }
+    .search_bar input[type='text'] {
+      width: 80%;
+      border: white;
+      height: 30px;
+    }
+  
+    input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus {
+      outline: none;
+  }

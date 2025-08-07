@@ -1,0 +1,24 @@
+
+
+
+.movie {
+    margin: 50px;
+    background-color: grey;
+    text-align: center;
+    padding: 50px;
+    color: white;
+}
+
+.review {
+    margin: 50px;
+}
+
+.comments {
+    color: white !important;
+}
+
+ul {
+    background-color: grey;
+    list-style: none;
+  }
+  
